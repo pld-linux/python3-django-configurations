@@ -1,0 +1,32 @@
+From ac6d31bb8310d3c3915d696d919429c2a0aa5a89 Mon Sep 17 00:00:00 2001
+From: Victor Seva <linuxmaniac@torreviejawireless.org>
+Date: Tue, 24 Mar 2020 10:52:41 +0100
+Subject: [PATCH] testing: remove django-discover-runner
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+project supports Django 1.11+
+
+> https://pypi.org/project/django-discover-runner/
+
+This runner has been added to Django 1.6 as the default test runner.
+If you use Django 1.6 or above you don’t need this app.
+
+fix #250
+---
+ setup.py | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/setup.py b/setup.py
+index add1cff..b032109 100644
+--- a/setup.py
++++ b/setup.py
+@@ -34,7 +34,6 @@ def read(*parts):
+         'email': ['dj-email-url'],
+         'search': ['dj-search-url'],
+         'testing': [
+-            'django-discover-runner',
+             'mock',
+             'django-cache-url>=1.0.0',
+             'dj-database-url',
