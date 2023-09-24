@@ -1,0 +1,26 @@
+--- django-configurations-2.3.2/tests/test_values.py.orig	2022-01-25 10:30:05.000000000 +0100
++++ django-configurations-2.3.2/tests/test_values.py	2023-09-24 14:00:05.387028481 +0200
+@@ -411,6 +411,7 @@ class ValueTests(TestCase):
+                 'EMAIL_HOST_PASSWORD': 'password',
+                 'EMAIL_HOST_USER': 'user@domain.com',
+                 'EMAIL_PORT': 587,
++                'EMAIL_TIMEOUT': None,
+                 'EMAIL_USE_SSL': False,
+                 'EMAIL_USE_TLS': True})
+         with env(EMAIL_URL='console://'):
+@@ -421,6 +422,7 @@ class ValueTests(TestCase):
+                 'EMAIL_HOST_PASSWORD': None,
+                 'EMAIL_HOST_USER': None,
+                 'EMAIL_PORT': None,
++                'EMAIL_TIMEOUT': None,
+                 'EMAIL_USE_SSL': False,
+                 'EMAIL_USE_TLS': False})
+         with env(EMAIL_URL='smtps://user@domain.com:password@smtp.example.com:wrong'):  # noqa: E501
+@@ -503,6 +505,7 @@ class ValueTests(TestCase):
+                 'EMAIL_HOST_PASSWORD': 'password',
+                 'EMAIL_HOST_USER': 'user@domain.com',
+                 'EMAIL_PORT': 587,
++                'EMAIL_TIMEOUT': None,
+                 'EMAIL_USE_SSL': False,
+                 'EMAIL_USE_TLS': True
+             })
