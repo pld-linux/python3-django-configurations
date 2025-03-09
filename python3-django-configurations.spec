@@ -66,7 +66,7 @@ Dokumentacja API modułu Pythona django-configurations.
 
 %prep
 %setup -q -n django-configurations-%{version}
-%patch0 -p1
+%patch -P 0 -p1
 
 %build
 %py3_build
