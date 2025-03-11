@@ -10,7 +10,7 @@ Summary(pl.UTF-8):	Moduł pomocniczy do organizowania ustawień Django
 Name:		python3-django-configurations
 # 2.3.x is the last version for Django 2.2
 Version:	2.3.2
-Release:	2
+Release:	3
 License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/django-configurations/
